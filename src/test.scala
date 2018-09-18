@@ -1,18 +1,10 @@
+
 object Test {
   def main(args: Array[String]) {
-    val alice = new Person("Alice", 25)
-    val bob = new Person("Bob", 32)
-    val charlie = new Person("Charlie", 32)
-
-    for (person <- List(alice, bob, charlie)) {
-      person match {
-        case Person("Alice", 25) => println("Hi Alice!")
-        case Person("Bob", 32) => println("Hi Bob!")
-        case Person(name, age) =>
-          println("Age: " + age + " year, name: " + name + "?")
-      }
-    }
+    val rat1 = new Rational(3, 9);
+    val rat2 = new Rational(5, 6)
+    println(rat1 + " + " + rat2 + " = " + (rat1 + rat2).toString)
   }
-  // 样例类
-  case class Person(name: String, age: Int)
 }
+
+
